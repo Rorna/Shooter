@@ -1,4 +1,4 @@
-# Shooter
+# Shooter (Top Down Shooting Game)
 
  ![title](https://user-images.githubusercontent.com/32096820/170277477-ba0c4fdd-db54-4c7e-ac08-3ee40461a227.png)
 # 개요
