@@ -4,10 +4,12 @@ using UnityEngine;
 
 public class HPItem : BaseItem
 {
+    #region Variables
     [SerializeField]
     private int recoverHP;
     public AudioClip recoverSound;
     public GameObject FloatingText;
+    #endregion
 
     void Update()
     {

@@ -7,11 +7,12 @@ using UnityEngine.UI;
 
 public abstract class UI_Base : MonoBehaviour
 {
+    #region Variables
     //컴포넌트와 오브젝트 저장용
     Dictionary<Type, UnityEngine.Object[]> objects = new Dictionary<Type, UnityEngine.Object[]>();
 
     public abstract void Init();
-
+    #endregion
     private void Start() 
     {
         Init();

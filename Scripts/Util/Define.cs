@@ -33,7 +33,6 @@ public class Define
         Key,
         HPRecover,
         Weapon,
-
     }
     public enum Weapons
     {
@@ -46,6 +45,7 @@ public class Define
         Effect,
         MaxCount,
     }
+
     public enum CameraMode
     {
         QuaterView,

@@ -6,7 +6,7 @@ using UnityEngine;
 ///그 문을 넣음 됨
 public class DoorController : MonoBehaviour
 {
-
+    #region Variables
     public AudioClip beepSound;
     public AudioClip doorSound;
 
@@ -16,6 +16,7 @@ public class DoorController : MonoBehaviour
 
     //움직이고자 하는 문 넣기
     public GameObject Door;
+    #endregion
 
     void Start()
     {

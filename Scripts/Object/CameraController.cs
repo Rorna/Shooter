@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class CameraController : MonoBehaviour
 {
+    #region Variables
     [SerializeField]
     Define.CameraMode mode = Define.CameraMode.QuaterView;
 
@@ -15,6 +16,8 @@ public class CameraController : MonoBehaviour
 
     //카메라를 플레이어에 세팅
     public void SetPlayer(GameObject _player) { player = _player; }
+    #endregion
+
     private void Awake()
     {
         //camera setting

@@ -6,7 +6,7 @@ public class UIManager
 {
     int order = 10;
     Stack<UI_Popup> popupStack = new Stack<UI_Popup>();
-    UI_Scene sceneUI = null;
+    public UI_Scene sceneUI = null;
 
     //루트 프로퍼티
     public GameObject Root
@@ -54,13 +54,13 @@ public class UIManager
         //프리팹 생성
         GameObject go = Managers.Resource.Instantiate($"UI/Scene/{_name}");
 
-        T sceneUI = Util.GetOrAddComponent<T>(go);
-        sceneUI = sceneUI; //SceneUI 저장
+        T _sceneUI = Util.GetOrAddComponent<T>(go);
+        sceneUI = _sceneUI; //SceneUI 저장
 
         //게임오브젝트를 루트 산하에 위치시킴
         go.transform.SetParent(Root.transform);
 
-        return sceneUI; //팝업 반환
+        return _sceneUI; //팝업 반환
     }
 
     /// 팝업 여는 함수

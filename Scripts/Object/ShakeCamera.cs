@@ -2,8 +2,9 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ShakeCamera : MonoBehaviour 
+public class ShakeCamera : MonoBehaviour
 {
+    #region Variables
     private static ShakeCamera instance; //어디서든 가져다 쓸수있게 싱글턴
 
     public static ShakeCamera Instance { get { return instance; } }
@@ -13,6 +14,7 @@ public class ShakeCamera : MonoBehaviour
 
     [SerializeField]
     private float shakeIntensity;
+    #endregion
 
     public ShakeCamera()
     {

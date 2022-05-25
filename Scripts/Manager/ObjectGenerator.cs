@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class ObjectGenerator : MonoBehaviour
 {
+    #region Variables
     [SerializeField]
     int objectCount = 0; //현재 오브젝트 수
     int reserveCount = 0;
@@ -17,10 +18,11 @@ public class ObjectGenerator : MonoBehaviour
     public float x2;
     public float y1;
     public float y2;
+    #endregion
 
     //오브젝트 카운트 추가
     public void AddObjectCount(int _value) { objectCount += _value; }
-    //유지시켜야 하는 몬스터 수 세팅
+    //유지시켜야 하는 오브젝트 수 세팅
     public void SetKeepObjectCount(int _count) { keepCount = _count; }
     void Start()
     {
@@ -48,6 +50,7 @@ public class ObjectGenerator : MonoBehaviour
 
         //랜덤 위치
         Vector3 randomPos = new Vector3(Random.RandomRange(x1, x2), 1.4f, Random.RandomRange(y1, y2));
+
         obj.transform.position = randomPos; 
 
         reserveCount--;

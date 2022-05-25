@@ -5,12 +5,14 @@ using UnityEngine.UI;
 
 public class WeaponChange : MonoBehaviour
 {
+    #region Variables
     public bool hasPowerGun = false; //아이템 습득시 true로 변경
     public int selectedWeapon = (int)Define.Weapons.normalGun;
 
     public AudioClip changeWeaponSound;
     public AudioClip beep;
     public GameObject FloatingText;
+    #endregion
 
     void Start()
     {

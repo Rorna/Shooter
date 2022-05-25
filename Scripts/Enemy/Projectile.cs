@@ -4,11 +4,12 @@ using UnityEngine;
 
 public class Projectile : MonoBehaviour
 {
+    #region Variables
     public GameObject FloatingDamage;
     public GameObject shootEffect;
     public float destroyTime;
     public int attack;
-
+    #endregion
     private void Update()
     {
         GameObject effect = Instantiate(shootEffect, transform.position, Quaternion.identity);

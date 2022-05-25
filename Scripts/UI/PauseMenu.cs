@@ -4,11 +4,12 @@ using UnityEngine;
 
 public class PauseMenu : UI_Popup
 {
+    #region Variables
     public static bool isPaused = false;
 
     [SerializeField]
     private GameObject pauseMenuUI;
-
+    #endregion
     void Update()
     {
         if(Input.GetKeyDown(KeyCode.Escape))

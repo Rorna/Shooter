@@ -4,8 +4,10 @@ using UnityEngine;
 
 public class WeaponItem : BaseItem
 {
+    #region Variables
     public AudioClip getSound;
     public GameObject FloatingText;
+    #endregion
 
     public override void Init()
     {

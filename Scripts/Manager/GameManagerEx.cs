@@ -5,11 +5,14 @@ using UnityEngine;
 
 public class GameManagerEx
 {
+    #region Variables
     GameObject player;
-    HashSet<GameObject> monsters = new HashSet<GameObject>(); 
+    HashSet<GameObject> objects = new HashSet<GameObject>(); 
+
+    public GameObject GetPlayer() { return player; } //player 반환
 
     public Action<int> OnSpwanEvent;
-    public GameObject GetPlayer() { return player; } //player 반환
+    #endregion
 
     //생성 함수
     public GameObject Spawn(Define.ObjectType _type, string _path, Transform _parent = null)
@@ -22,7 +25,7 @@ public class GameManagerEx
             //해시에 삽입
             case Define.ObjectType.Enemy:
                 {
-                    monsters.Add(go);
+                    objects.Add(go);
 
                     //정보 전달
                     if (OnSpwanEvent != null)
@@ -34,7 +37,7 @@ public class GameManagerEx
                 break;
             case Define.ObjectType.Item:
                 {
-                    monsters.Add(go);
+                    objects.Add(go);
 
                     if (OnSpwanEvent != null)
                         OnSpwanEvent.Invoke(1);
@@ -63,9 +66,9 @@ public class GameManagerEx
         {
             case Define.ObjectType.Enemy:
                 {
-                    if (monsters.Contains(_go)) //있으면
+                    if (objects.Contains(_go)) //있으면
                     {
-                        monsters.Remove(_go); //삭제
+                        objects.Remove(_go); //삭제
 
                         if (OnSpwanEvent != null)
                             OnSpwanEvent.Invoke(-1);
@@ -80,9 +83,9 @@ public class GameManagerEx
                 break;
             case Define.ObjectType.Item:
                 {
-                    if (monsters.Contains(_go))
+                    if (objects.Contains(_go))
                     {
-                        monsters.Remove(_go);
+                        objects.Remove(_go);
 
                         if (OnSpwanEvent != null)
                             OnSpwanEvent.Invoke(-1);

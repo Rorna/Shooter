@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class TurretController : BaseEnemy
 {
+    #region Variables
     public Transform ShootPoint; 
     public GameObject bulletPrefab; 
     public float bulletForce; 
@@ -20,6 +21,7 @@ public class TurretController : BaseEnemy
         stat.Hp = 300;
         stat.Attack = 60;
     }
+    #endregion
 
     protected override void Idle(float _distance)
     {

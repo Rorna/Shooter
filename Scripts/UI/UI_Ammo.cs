@@ -5,6 +5,7 @@ using UnityEngine.UI;
 
 public class UI_Ammo : UI_Scene
 {
+    #region Variables
     private string str;
     public Transform player;
 
@@ -14,7 +15,7 @@ public class UI_Ammo : UI_Scene
         Frame,
         Sprite,
     }
-
+    #endregion
     public override void Init()
     {
         base.Init();
@@ -70,7 +71,5 @@ public class UI_Ammo : UI_Scene
                 }
                 break;
         }
-
-
     }
 }

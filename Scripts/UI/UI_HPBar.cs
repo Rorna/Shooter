@@ -5,13 +5,14 @@ using UnityEngine.UI;
 
 public class UI_HPBar : UI_Base
 {
+    #region Variables
     enum GameObjects
     {
         HPBar,
     }
 
     Stat stat; //체력 정보 추출용
-
+    #endregion
     public override void Init()
     {
         Bind<GameObject>(typeof(GameObjects));

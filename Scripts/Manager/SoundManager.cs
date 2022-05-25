@@ -4,9 +4,10 @@ using UnityEngine;
 
 public class SoundManager 
 {
+    #region Variables
     AudioSource[] audioSources = new AudioSource[(int)Define.Sound.MaxCount];
     Dictionary<string, AudioClip> audioClips = new Dictionary<string, AudioClip>();
-
+    #endregion
     public void Init()
     {
         GameObject root = GameObject.Find("@Sound");

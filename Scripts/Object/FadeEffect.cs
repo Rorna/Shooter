@@ -4,8 +4,10 @@ using UnityEngine;
 
 public class FadeEffect : MonoBehaviour
 {
+    #region Variables
     public Animator transition;
     public float transitionTime = 1f;
+    #endregion
 
     public IEnumerator CrossFade()
     {

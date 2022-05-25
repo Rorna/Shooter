@@ -4,10 +4,11 @@ using UnityEngine;
 
 public class BossController : BaseEnemy
 {
+    #region Variables
     public Transform ShootPoint;
     public GameObject bulletPrefab;
-    public float bulletForce; 
-
+    public float bulletForce;
+    #endregion
     public override void Init()
     {
         InitStat();

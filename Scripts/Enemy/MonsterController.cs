@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class MonsterController : BaseEnemy
 {
+    #region Variables
     private Animator anim;
 
     public float attackRange = 2f;
@@ -18,7 +19,7 @@ public class MonsterController : BaseEnemy
         anim = GetComponent<Animator>();
         InitStat();
     }
-
+    #endregion
     protected override void InitStat()
     {
         stat.MaxHp = 200;

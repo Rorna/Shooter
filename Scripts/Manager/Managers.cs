@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class Managers : MonoBehaviour
 {
+    #region Variables
     static Managers s_instance; //싱글턴
     static Managers Instance { get { Init(); return s_instance; } } 
     GameManagerEx game = new GameManagerEx();
@@ -19,6 +20,7 @@ public class Managers : MonoBehaviour
     public static SceneManagerEx Scene { get { return Instance.scene; } }
     public static SoundManager Sound { get { return Instance.sound; } }
     public static UIManager UI { get { return Instance.ui; } }
+    #endregion
 
     void Start()
     {

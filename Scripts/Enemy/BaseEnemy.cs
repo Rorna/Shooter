@@ -4,7 +4,7 @@ using UnityEngine;
 
 public abstract class BaseEnemy : MonoBehaviour
 {
-    #region parameter
+    #region Variables
     public Define.ObjectType objectType { get; protected set; } = Define.ObjectType.Enemy;
 
     protected Define.State state = Define.State.Idle;

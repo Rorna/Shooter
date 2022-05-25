@@ -5,6 +5,7 @@ using UnityEngine.UI;
 
 public class UI_Player_HPBar : UI_Base
 {
+    #region Variables
     enum GameObjects
     {
         Damage,
@@ -13,6 +14,7 @@ public class UI_Player_HPBar : UI_Base
 
     PlayerStat stat; //체력 정보 추출용
     Color alphaColor;
+    #endregion
 
     public override void Init()
     {

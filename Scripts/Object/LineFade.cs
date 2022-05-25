@@ -3,6 +3,7 @@ using System.Collections;
 
 public class LineFade : MonoBehaviour
 {
+	#region Variables
 	[SerializeField] 
 	private Color color;
 
@@ -10,7 +11,7 @@ public class LineFade : MonoBehaviour
 	private float speed = 10f;
 
 	LineRenderer lineRenderer;
-
+	#endregion
 	void Start()
 	{
 		lineRenderer = GetComponent<LineRenderer>();

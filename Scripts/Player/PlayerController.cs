@@ -5,6 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class PlayerController : MonoBehaviour
 {
+    #region Variables
     private enum State
     {
         Move, //이동
@@ -40,6 +41,7 @@ public class PlayerController : MonoBehaviour
     //열쇠 변수 추가
     public bool hasKey = false;
     public bool isBossDead = false;
+    #endregion
 
     void Awake()
     {

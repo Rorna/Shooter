@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class Gun : MonoBehaviour
 {
+    #region Variables
     public int damage = 10;
     public float range = 100f;
     public int current_ammo;
@@ -35,6 +36,7 @@ public class Gun : MonoBehaviour
     public GameObject FloatingText;
 
     public Sprite sprite;
+    #endregion
 
     private void Start()
     {      

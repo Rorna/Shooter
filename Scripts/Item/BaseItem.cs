@@ -4,6 +4,7 @@ using UnityEngine;
 
 public abstract class BaseItem : MonoBehaviour
 {
+    #region Variables
     [SerializeField]
     protected float speed;
     [SerializeField]
@@ -11,6 +12,7 @@ public abstract class BaseItem : MonoBehaviour
     [SerializeField]
     public Define.Item ItemType { get; protected set; } = Define.Item.Unknown;
     public Define.ObjectType objectType { get; protected set; } = Define.ObjectType.Item;
+    #endregion
 
     private void Start()
     {

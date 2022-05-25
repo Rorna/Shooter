@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class Stat : MonoBehaviour
 {
+    #region Variables
     [SerializeField]
     protected int hp;
     [SerializeField]
@@ -18,6 +19,7 @@ public class Stat : MonoBehaviour
     public int Attack { get { return attack; } set { attack = value; } }
     public float MoveSpeed { get { return moveSpeed; } set { moveSpeed = value; } }
 
+    #endregion
     ///피격 처리 함수
     public virtual int OnAttacked(Stat _attacker)
     {
