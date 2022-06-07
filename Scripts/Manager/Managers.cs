@@ -6,16 +6,15 @@ public class Managers : MonoBehaviour
 {
     #region Variables
     static Managers s_instance; //싱글턴
-    static Managers Instance { get { Init(); return s_instance; } } 
+    static Managers Instance { get { Init(); return s_instance; } }
+
     GameManagerEx game = new GameManagerEx();
-
-    public static GameManagerEx Game { get { return Instance.game; } }
-
     ResourceManager resource = new ResourceManager();
     SceneManagerEx scene = new SceneManagerEx();
     SoundManager sound = new SoundManager();
     UIManager ui = new UIManager();
 
+    public static GameManagerEx Game { get { return Instance.game; } }
     public static ResourceManager Resource { get { return Instance.resource; } }
     public static SceneManagerEx Scene { get { return Instance.scene; } }
     public static SoundManager Sound { get { return Instance.sound; } }
