@@ -30,16 +30,7 @@ public class Stat : MonoBehaviour
 
         //타겟 체력--
         Hp -= damage; 
-        
-        if (Hp <= 0)
-        {
-            Hp = 0;
-            OnDead(_attacker);
-        }
+
         return damage;
-    }
-    protected virtual void OnDead(Stat _attacker) //사망
-    {
-        Managers.Game.Despawn(gameObject); 
     }
 }

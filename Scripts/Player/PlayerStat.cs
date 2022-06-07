@@ -19,8 +19,4 @@ public class PlayerStat : Stat
         MoveSpeed = 9;
 
     }
-    protected override void OnDead(Stat _attacker)
-    {
-        Managers.Game.Despawn(gameObject);
-    }
 }
