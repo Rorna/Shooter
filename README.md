@@ -2,7 +2,7 @@
 
  ![title](https://user-images.githubusercontent.com/32096820/170277477-ba0c4fdd-db54-4c7e-ac08-3ee40461a227.png)
 
-#*これは新卒の時に制作したものです。
+# *これは新卒の時に制作したものです。
 
 # 概要
 > + ジャンル : RPG
