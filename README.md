@@ -1,9 +1,12 @@
 # Shooter (Top Down Shooting Game)
 
  ![title](https://user-images.githubusercontent.com/32096820/170277477-ba0c4fdd-db54-4c7e-ac08-3ee40461a227.png)
-# 개요
-> + 게임 장르 : RPG
-> + 플랫폼 : PC(windows)
-> + 제작 인원 : 1인 (개인 프로젝트)
-> + 제작 기간 : 약 2주
-> + 사용 엔진과 언어 : 유니티, C#
+
+#*これは新卒の時に制作したものです。
+
+# 概要
+> + ジャンル : RPG
+> + プラットホーム : PC(windows)
+> + 制作人員 : 一人 (個人プロジェクト)
+> + 制作期間 : 約２週間
+> + 環境と言語 : Unity, C#
