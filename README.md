@@ -2,11 +2,11 @@
 
  ![title](https://user-images.githubusercontent.com/32096820/170277477-ba0c4fdd-db54-4c7e-ac08-3ee40461a227.png)
 
-# *これは新卒採用の時に制作したものです。
+Created in 2021
 
-# 概要
-> + ジャンル : RPG
-> + プラットホーム : PC(windows)
-> + 制作人員 : 一人 (個人プロジェクト)
-> + 制作期間 : 約２週間
-> + 環境と言語 : Unity, C#
+# Overview
+> + Genre : Shooting
+> + Platform : PC(windows)
+> + Team Size : Solo Project
+> + Development Duration : 2 Weeks
+> + Development Tools and Languages : Unity, C#
